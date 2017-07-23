@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.lang.Math;
+import java.math.BigInteger;
+
+ class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		while(sc.hasNext())
+		{
+			
+			int n=sc.nextInt();
+			int a=sc.nextInt();
+			
+			BigInteger  res=new BigInteger("0");
+			BigInteger ah=BigInteger.valueOf(a);
+			
+			for(int i=1;i<=n;i++)
+			{
+				res=res.add(BigInteger.valueOf(i).multiply(ah.pow(i)));
+			}
+			System.out.println(res);
+		}
+	
+    }
+}
+	
