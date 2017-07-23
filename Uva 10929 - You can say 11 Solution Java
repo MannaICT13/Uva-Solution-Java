@@ -1,0 +1,37 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		final BigInteger eleven=new BigInteger("11");
+		
+		String n=sc.next();
+		
+		while(!n.equals("0")){
+			
+			BigInteger x=new BigInteger(n);
+			BigInteger mode=x.mod(eleven);
+			
+			if(mode.equals(BigInteger.ZERO))
+			{
+				System.out.printf("%s is a multiple of 11.\n",n);
+
+			}
+			else
+				System.out.printf("%s is not a multiple of 11.\n",n);
+			
+			n=sc.next();
+			
+		}
+		
+		
+		}
+	
+	}
+
+
