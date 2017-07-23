@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import static java.lang.Character.*;
+ class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		String str,key;
+		int len;
+		key="`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./";
+		while(sc.hasNext())
+		{
+			
+			str=sc.nextLine();
+			len=str.length();
+			str=str.toLowerCase();
+			
+			for(int i=0;i<str.length();i++)
+			{
+				if(str.charAt(i)==' ')
+					System.out.print(" ");
+				else{
+					System.out.print(key.charAt(key.indexOf(str.charAt(i))-2));
+				}
+			}
+			
+			System.out.println();
+			
+			
+			
+			
+		}
+	
+		
+		
+    }
+
+}
