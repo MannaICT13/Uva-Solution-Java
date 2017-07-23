@@ -1,0 +1,36 @@
+import java.lang.*;
+import java.util.*;
+ class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		Scanner sc=new Scanner(System.in);
+		int t=0;
+		while(sc.hasNext())
+		{
+			t++;
+			
+			int m=sc.nextInt();
+			if(m<=0)
+				break;
+			int l=1,c=0;
+			
+			while(true)
+			{
+				if(l>=m)
+				{
+					System.out.println("Case "+t+": "+c);
+					break;
+				}
+				else
+					l+=l;
+				c++;
+			}
+			
+			
+		}
+    }
+
+}
