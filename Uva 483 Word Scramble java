@@ -1,0 +1,27 @@
+import java.lang.*;
+import java.util.*;
+ class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		
+		while(sc.hasNext()){
+		String str="";
+		str=sc.nextLine();
+		
+		String []parts=str.split(" ");
+		
+		for(int i=0;i<parts.length;i++)
+		{
+			 System.out.print(new StringBuffer(parts[i]).reverse()+( i==parts.length-1 ? "\n" : " "));
+		}
+	
+		
+			
+	}
+}
+
+}
