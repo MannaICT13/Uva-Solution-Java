@@ -1,0 +1,37 @@
+import java.lang.*;
+import java.util.*;
+ class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		Scanner sc=new Scanner(System.in);
+		String s;
+		int i,j,l;
+		long v=0l;
+		
+		while(sc.hasNext())
+		{
+			v=sc.nextLong();
+			if(v==0)
+				break;
+			s=Long.toBinaryString(v);
+			int c=0;
+			l=s.length();
+			for(i=0;i<l;i++)
+			{
+				if(s.charAt(i)=='1'){
+					c++;
+				}
+			}
+					
+			System.out.println("The parity of "+s+" is "+c+" (mod 2).");
+		}
+		
+    }
+	
+	
+	
+
+}
